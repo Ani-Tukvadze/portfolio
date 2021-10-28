@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial' , sans-serif;
+    background: black;
+    color: #fff;
+}
+
+.hero-image {
+    background-image: url("dogs.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
+}
+nav .mainMenu li a:hover {
+    background: #3AB6B2;
+}
+nav .openMenu {
+    font-size: 1rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size:  1rem;
+    display: none;
+    cursor: pointer;
+}
+.fa-mail:hover {color: rgb(0, 110, 255);}
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-instagram:hover {color: rgb(0, 110, 255);}
+.fa-be:hover {color: rgb(0, 110, 255);}
+.fa-deviantart:hover {color: rgb(0, 110, 255);}
+.fa-flickr:hover {color: rgb(0, 110, 255);}
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.hero-button {
+    background-color: #3AB6B2;
+    color: white;
+    padding: 11px 30px 12px;
+    border: 1px solid #ffffff;
+    outline: 3px solid #3AB6B2;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.about-section{
+    background-color: white;
+    padding-top: 40px;
+}
+.who-we-are img {
+    height: 414px;
+    margin-left: -6px;
+    padding-right: 53px;
+    position: relative;
+}
+.who-we-are .wrap .info {
+    flex: 1 0;
+    margin-top: -53px;
+}
+.info h4 {
+    margin-bottom: 24px;
+    color: #323232;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: -.8px;
+    text-transform: uppercase;
+}
+.info p {
+    color: #6a6a6a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 27px;
+}
+.who-we-are{
+    display: flex;
+    padding-top: 70px;
+}
+.contact .boxes {
+    display: flex;
+    gap: 250px;
+    justify-content: center;
+}
+.top-form,
+.middle-form,
+.bottom-form {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-form {
+    flex-direction: column;
+    align-items: center;
+}
+.contact_form {
+    margin-top: 20px;
+}
+
+.portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px;
+    margin-top: 40px;
+    padding-top: 70px;
+}
+
+.portfolio img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portfolio picture {
+    height: 300px;
+    overflow: hidden;
+}
+
+.portfolio .big {
+    grid-column: span 2;
+}
+
+.main-img {
+    width: 100%;
+}
+
+.portfolio-section {
+    background-color: white;
+    padding-top: 40px;
+}
+
+.section-heading {
+    color: black;
+    text-align: center;
+}
+.contact-section{
+    background-color: white;
+    padding-top: 40px;
+
+}
+.section-heading {
+    color: black;
+    text-align: center;
+}
+
+.contact picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box {
+    color: black;
+    padding-top: 40px;
+    text-align: left;
+}
+.contact {
+    padding-top: 70px;
+}
+
+  
+.input_name {
+    width: 465px;
+    height: 46px;
+    margin-right: 12px;
+    padding-left: 9px;
+    color: #7C7C7C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.9px;
+}
+
+.input_email {
+    width: 465px;
+    height: 46px;
+    padding-left: 9px;
+    color: #7C7C7C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.7px;
+}
+
+.input_subject {
+    width: 945px;
+    height: 46px;
+    margin-top: 14px;
+    padding-bottom: 3px;
+    padding-left: 9px;
+    color: #7C7C7C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.7px;
+
+}
+
+.text_area {
+    width: 945px;
+    height: 171px;
+    margin-top: 14px;
+    padding-top: 14px;
+    padding-bottom: 3px;
+    padding-left: 9px;
+    color: #7C7C7C;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -.4px;
+    resize: none;
+}
+
+.input_message {
+    display: inline-block;
+    margin-top: 14px;
+    margin-left: 3.6px;
+    padding: 11px 30px 12px;
+    outline: 3px solid #3AB6B2;
+    background: #3AB6B2;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: .1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}

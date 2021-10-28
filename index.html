@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="./app.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav>
-        <div class="logo"><h1>PARRY</h1></div>
+        <div class="logo"><h1>HAPPY ANIMALS</h1></div>
         <div class="openMenu"><i class="fa fa-bars"></i></div>
         <ul class="mainMenu">
             <li><a href="#">HOME</a></li>
@@ -33,41 +33,117 @@
         </ul>
     </nav>
     <div>   
-    <img src="road_forest.jpg" class="main-img">
+    <img src="img/dogs.jpg" class="main-img">
     <div>
          <div class="hero-text">
-            <h1 style="font-size: 50px;">Walk With Parry</h1>
-            <h2 style="font-size: 100px;">You Will Love It</h2>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget faucibus</h3>
+            <h1 style="font-size: 50px;">HAPPY ANIMALS</h1>
+            <h2 style="font-size: 100px;">We treat your pets like family</h2>
+            <h3> Our Wellness Plans help you save money on important preventive healthcare services you were already planning for your furry family members.</h3>
             <a href="#" class="hero-button">READ MORE</a>
-
          </div>
-    </div>    
+    </div>  
+    <section class="about-section">
+        <h2 class="section-heading">WHO WE ARE</h2>
+        <div class="who-we-are">
+            <div class="wrap">
+                <picture>
+                    <img src="img/vet.jpg" alt="vet">
+                </picture>
+            </div>
+            <div class="info">
+                <h4>SOME WORDS ABOUT US</h4>
+                <p>
+                    "We provide circle of life petcare which involves us guiding you through your pet’s needs at every stage.
+                    We embrace technology to improve not only our patient care but also to improve our ability to connect with you, our clients and keep you updated on your pet’s progress".
+                </p>
+            </div>
+        </div>
+    </section>    
     <section class="portfolio-section">
         <h3 class="section-heading">PORTFOLIO</h3>
         <div class="portfolio">
             <picture class="big">
-                <img src="tokyo.jpg" alt="tokyo">
+                <img src="img/dogscare2.jpg" alt="dogscare2">
             </picture>
             <picture>
-                <img src="royal.jpg" alt="tokyo">
+                <img src="img/dogscare.png" alt="dogscare">
             </picture>
             <picture>
-                <img src="dresden.jpg" alt="tokyo">
+                <img src="img/cat1.jpg" alt="cat1">
             </picture>
             <picture>
-                <img src="sakura.jpg" alt="tokyo">
+                <img src="img/cat2.jpg" alt="cat2">
             </picture>
             <picture class="big">
-                <img src="floyd.jpg" alt="tokyo">
+                <img src="img/guinea-pig.jpg" alt="guinea-pig">
             </picture>
             <picture>
-                <img src="lemon.jpg" alt="tokyo">
+                <img src="img/guinea-pigs.jpg" alt="guinea-pigs">
             </picture>
             <picture class="big">
-                <img src="japan.jpg" alt="tokyo">
+                <img src="img/parrot.jpg" alt="parrot">
             </picture>
         </div>
+        <div>
     </section>
+    <div class="contact-section">
+        <h4 class="section-heading">CONTACT</h4>
+        <div class="contact">
+            <div class="boxes">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-map-marker" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>61 Simon Kandelaki St,<br>Tbilisi,Georgia</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>598-22-64-55</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>happydog@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <form>
+                <div class="contact_form">
+                    <div class="top-form">
+                        <div class="inner-form">
+                            <input class="input_name" id="username" placeholder="Name">
+                        </div>
+                        <div class="inner-form">
+                            <input class="input_email" id="username" placeholder="Email"> 
+                        </div>
+                    </div>
+                    <div class="middle-form">
+                        <div class="inner-form">
+                            <input class="input_subject" id="username" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="bottom-form">
+                        <div class="inner-form">
+                            <textarea class="text_area" placeholder="Message"></textarea>
+                        </div>
+                        <div class="inner-form">
+                            <a href="#" class="input_message">SEND MESSAGE</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
