@@ -94,7 +94,7 @@ nav .logo {
     padding-top: 40px;
 }
 .who-we-are img {
-    height: 414px;
+    max-width: 100%;
     margin-left: -6px;
     padding-right: 53px;
     position: relative;
@@ -118,7 +118,7 @@ nav .logo {
     font-size: 14px;
     line-height: 27px;
 }
-.who-we-are{
+.who-we-are {
     display: flex;
     padding-top: 70px;
 }
@@ -160,6 +160,10 @@ nav .logo {
 .portfolio picture {
     height: 300px;
     overflow: hidden;
+}
+
+.portfolio picture:hover {
+    animation: pulse 1s infinite;
 }
 
 .portfolio .big {
@@ -274,4 +278,101 @@ nav .logo {
     letter-spacing: .1px;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.heading-1 {
+    font-size: 100px;
+}
+
+.heading-2 {
+    font-size: 50px;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}   
+
+@media (max-width: 768px) {
+    .portfolio {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .portfolio .big {
+        grid-column: span 1;
+    }
+
+    .who-we-are {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .who-we-are img {
+        padding-right: 0;
+    }
+
+    .heading-1 {
+        font-size: 40px;
+    }
+    
+    .heading-2 {
+        font-size: 30px;
+    }
+    
+    .heading-3 {
+        display: none;
+    }
+
+    .main-img-wrapper {
+        position: relative;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .top-form,
+    .middle-form,
+    .bottom-form {
+         display: block;
+         justify-content: center;
+}
+    .bottom-form {
+         flex-direction: column;
+         align-items: center;
+}
+   .inner-form {
+    padding-bottom: 3%;
+}
+.contact_form {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+        .input_name 
+        {
+            width: 100%;
+            
+        }
+        .input_email {
+            width: 100%;
+        }
+        .input_subject {
+            width: 100%;
+        }
+        .text_area {
+            width: 100%;
+        }   
 }
